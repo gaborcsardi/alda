@@ -346,10 +346,12 @@ Model<a class="anchor" aria-label="anchor" href="#a-formal-representation-of-the
 <span><span class="co">#&gt; Terms added sequentially (first to last)</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt;                     Df Deviance Resid. Df Resid. Dev</span></span>
-<span><span class="co">#&gt; NULL                                  822    1139.53</span></span>
-<span><span class="co">#&gt; factor(grade)        6   487.58       816     651.96</span></span>
-<span><span class="co">#&gt; parental_transition  1    17.29       815     634.66</span></span>
+<span><span class="co">#&gt;                     Df Deviance Resid. Df Resid. Dev  Pr(&gt;Chi)    </span></span>
+<span><span class="co">#&gt; NULL                                  822    1139.53              </span></span>
+<span><span class="co">#&gt; factor(grade)        6   487.58       816     651.96 &lt; 2.2e-16 ***</span></span>
+<span><span class="co">#&gt; parental_transition  1    17.29       815     634.66 3.203e-05 ***</span></span>
+<span><span class="co">#&gt; ---</span></span>
+<span><span class="co">#&gt; Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/stats/anova.html" class="external-link">anova</a></span><span class="op">(</span><span class="va">model_C</span><span class="op">)</span></span>
 <span><span class="co">#&gt; Analysis of Deviance Table</span></span>
 <span><span class="co">#&gt; </span></span>
@@ -360,10 +362,12 @@ Model<a class="anchor" aria-label="anchor" href="#a-formal-representation-of-the
 <span><span class="co">#&gt; Terms added sequentially (first to last)</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt;                        Df Deviance Resid. Df Resid. Dev</span></span>
-<span><span class="co">#&gt; NULL                                     822    1139.53</span></span>
-<span><span class="co">#&gt; factor(grade)           6   487.58       816     651.96</span></span>
-<span><span class="co">#&gt; parental_antisociality  1    14.79       815     637.17</span></span>
+<span><span class="co">#&gt;                        Df Deviance Resid. Df Resid. Dev  Pr(&gt;Chi)    </span></span>
+<span><span class="co">#&gt; NULL                                     822    1139.53              </span></span>
+<span><span class="co">#&gt; factor(grade)           6   487.58       816     651.96 &lt; 2.2e-16 ***</span></span>
+<span><span class="co">#&gt; parental_antisociality  1    14.79       815     637.17 0.0001204 ***</span></span>
+<span><span class="co">#&gt; ---</span></span>
+<span><span class="co">#&gt; Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</span></span>
 <span><span class="co"># Deviance tests are sequential so the order of terms matters. To test</span></span>
 <span><span class="co"># parental_transition and parental_antisociality, the model needs to be</span></span>
 <span><span class="co"># fit twice, once with each as the last term.</span></span>
@@ -377,11 +381,13 @@ Model<a class="anchor" aria-label="anchor" href="#a-formal-representation-of-the
 <span><span class="co">#&gt; Terms added sequentially (first to last)</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt;                        Df Deviance Resid. Df Resid. Dev</span></span>
-<span><span class="co">#&gt; NULL                                     822    1139.53</span></span>
-<span><span class="co">#&gt; factor(grade)           6   487.58       816     651.96</span></span>
-<span><span class="co">#&gt; parental_antisociality  1    14.79       815     637.17</span></span>
-<span><span class="co">#&gt; parental_transition     1     8.02       814     629.15</span></span>
+<span><span class="co">#&gt;                        Df Deviance Resid. Df Resid. Dev  Pr(&gt;Chi)    </span></span>
+<span><span class="co">#&gt; NULL                                     822    1139.53              </span></span>
+<span><span class="co">#&gt; factor(grade)           6   487.58       816     651.96 &lt; 2.2e-16 ***</span></span>
+<span><span class="co">#&gt; parental_antisociality  1    14.79       815     637.17 0.0001204 ***</span></span>
+<span><span class="co">#&gt; parental_transition     1     8.02       814     629.15 0.0046222 ** </span></span>
+<span><span class="co">#&gt; ---</span></span>
+<span><span class="co">#&gt; Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/stats/anova.html" class="external-link">anova</a></span><span class="op">(</span><span class="va">model_D</span><span class="op">)</span></span>
 <span><span class="co">#&gt; Analysis of Deviance Table</span></span>
 <span><span class="co">#&gt; </span></span>
@@ -392,11 +398,13 @@ Model<a class="anchor" aria-label="anchor" href="#a-formal-representation-of-the
 <span><span class="co">#&gt; Terms added sequentially (first to last)</span></span>
 <span><span class="co">#&gt; </span></span>
 <span><span class="co">#&gt; </span></span>
-<span><span class="co">#&gt;                        Df Deviance Resid. Df Resid. Dev</span></span>
-<span><span class="co">#&gt; NULL                                     822    1139.53</span></span>
-<span><span class="co">#&gt; factor(grade)           6   487.58       816     651.96</span></span>
-<span><span class="co">#&gt; parental_transition     1    17.29       815     634.66</span></span>
-<span><span class="co">#&gt; parental_antisociality  1     5.51       814     629.15</span></span></code></pre></div>
+<span><span class="co">#&gt;                        Df Deviance Resid. Df Resid. Dev  Pr(&gt;Chi)    </span></span>
+<span><span class="co">#&gt; NULL                                     822    1139.53              </span></span>
+<span><span class="co">#&gt; factor(grade)           6   487.58       816     651.96 &lt; 2.2e-16 ***</span></span>
+<span><span class="co">#&gt; parental_transition     1    17.29       815     634.66 3.203e-05 ***</span></span>
+<span><span class="co">#&gt; parental_antisociality  1     5.51       814     629.15   0.01886 *  </span></span>
+<span><span class="co">#&gt; ---</span></span>
+<span><span class="co">#&gt; Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="interpreting-parameter-estimates">11.4 Interpreting Parameter Estimates<a class="anchor" aria-label="anchor" href="#interpreting-parameter-estimates"></a>
